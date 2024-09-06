@@ -15,5 +15,9 @@ class Business extends Model
     public  function services(){
         return $this->hasMany(Service::class);
     }
+    public  function reviews(){
+        return $this->hasMany(Review::class);
+    }
+
 
 }
